@@ -4,6 +4,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#fff0f5"><title>For Arbiya 💗 | Happy Birthday</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--pink:#f5a9c5;--deep:#d96d9c;--light:#fff0f5;--pale:#fff8fb;--text:#765568}
@@ -20,6 +21,361 @@ nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;
 .gift-section{text-align:center;background:white}.gift-button{background:none;border:none;font-size:100px;transition:.3s;animation:heartbeat 2s infinite}.gift-button:hover{transform:scale(1.12)}.gift-message{display:none;max-width:600px;margin:25px auto 0;padding:30px;background:#fff1f6;border-radius:22px;line-height:2}.gift-message.show{display:block;animation:appear .7s}
 .music-btn{position:fixed;z-index:30;right:18px;bottom:18px;border:0;border-radius:50px;padding:13px 17px;color:white;background:#d979a2;box-shadow:0 5px 20px #d58eaa50}footer{padding:45px 20px;background:#fff0f5;text-align:center;line-height:2;color:#a66d89}footer .script{font-size:38px}.heart-particle{position:fixed;bottom:-30px;z-index:50;pointer-events:none;animation:rise 4s linear forwards}@keyframes rise{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
 @media(max-width:650px){nav{padding:12px 15px}.logo{font-size:25px}.nav-links{gap:10px}.nav-links a{font-size:10px}.hero{min-height:570px}section{padding:65px 17px}.gallery{gap:12px}.photo-frame{height:190px}.wish-grid{grid-template-columns:1fr}.time-box{width:75px;padding:15px 5px}.time-box strong{font-size:25px}.time-box span{font-size:9px}.letter-content{padding:22px}}
+
+/* ==========================================
+   PREMIUM 3D ROMANTIC EXPERIENCE
+========================================== */
+
+:root {
+  --pink: #f5a9c5;
+  --deep: #d96d9c;
+  --light: #fff0f5;
+  --pale: #fff8fb;
+  --gold: #e7b7a0;
+}
+
+body {
+  perspective: 1200px;
+  background:
+    radial-gradient(ellipse at 10% 10%, #ffe0ed 0%, transparent 35%),
+    radial-gradient(ellipse at 90% 80%, #fbd9e8 0%, transparent 35%),
+    #fff8fb;
+}
+
+/* Romantic animated background */
+.hero {
+  background:
+    radial-gradient(circle at 20% 20%, #ffd3e5 0%, transparent 35%),
+    radial-gradient(circle at 80% 75%, #f6c5dc 0%, transparent 35%),
+    linear-gradient(135deg, #fff7fb, #ffeaf3, #fff5fa);
+  background-size: 200% 200%;
+  animation: romanticBackground 10s ease infinite;
+}
+
+@keyframes romanticBackground {
+  0%,100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* 3D Hero */
+.hero-content {
+  transform-style: preserve-3d;
+  animation: heroEntrance 1.5s cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes heroEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(70px) rotateX(12deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+.hero h1 {
+  text-shadow: 0 5px 0 #f7d0df, 0 12px 30px #d96d9c35;
+  animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%,100% { text-shadow: 0 5px 0 #f7d0df, 0 10px 20px #d96d9c30; }
+  50% { text-shadow: 0 5px 0 #f7d0df, 0 10px 35px #d96d9c80; }
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 0 5px 15px #d96d9c35;
+}
+
+/* 3D heartbeat */
+.hero-heart {
+  display: inline-block;
+  font-size: 65px;
+  filter: drop-shadow(0 10px 15px #d96d9c65);
+  animation: heart3D 2s ease-in-out infinite;
+}
+
+@keyframes heart3D {
+  0%,100% { transform: scale(1) rotateY(0deg); }
+  25% { transform: scale(1.2) rotateY(25deg); }
+  50% { transform: scale(1.05) rotateY(0deg); }
+  75% { transform: scale(1.2) rotateY(-25deg); }
+}
+
+/* 3D Buttons */
+.btn {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffb6d0, #dc6e9d, #b84d7b);
+  box-shadow:
+    0 7px 0 #b95782,
+    0 13px 25px #d96d9c55;
+  transition: .35s;
+}
+
+.btn:hover {
+  transform: translateY(-5px) scale(1.04);
+  box-shadow:
+    0 11px 0 #b95782,
+    0 20px 35px #d96d9c65;
+}
+
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 3px 0 #b95782;
+}
+
+/* Glass navigation */
+nav {
+  background: rgba(255,255,255,.72);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 5px 25px #d96d9c12;
+  transition: .3s;
+}
+
+/* 3D countdown boxes */
+.time-box {
+  background: linear-gradient(145deg, #fff, #ffe8f1);
+  border: 1px solid #f7d4e3;
+  box-shadow:
+    8px 8px 18px #e8c7d5,
+    -6px -6px 15px #ffffff;
+  transition: .35s;
+  transform-style: preserve-3d;
+}
+
+.time-box:hover {
+  transform: translateY(-10px) rotateX(12deg) rotateY(-8deg);
+  box-shadow: 0 18px 30px #d96d9c30;
+}
+
+/* Premium photo cards */
+.photo-card {
+  border: 1px solid #ffe0ec;
+  box-shadow:
+    10px 10px 25px #d6a9bc40,
+    -8px -8px 20px white;
+  transform-style: preserve-3d;
+  transition: transform .5s, box-shadow .5s;
+}
+
+.photo-card:hover {
+  transform: perspective(800px) rotateY(-7deg) rotateX(5deg) translateY(-12px);
+  box-shadow: 0 25px 45px #d96d9c40;
+}
+
+.photo-frame {
+  transform: translateZ(15px);
+}
+
+.photo-frame img {
+  transition: transform .7s;
+}
+
+.photo-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Wish cards */
+.wish-card {
+  background: linear-gradient(145deg, #fff, #fff0f6);
+  box-shadow: 8px 8px 20px #eacbd9, -7px -7px 20px #ffffff;
+  transition: .4s;
+  transform-style: preserve-3d;
+}
+
+.wish-card:hover {
+  transform: translateY(-12px) rotateX(6deg);
+  box-shadow: 0 20px 35px #d96d9c30;
+}
+
+.wish-card .emoji {
+  display: inline-block;
+  animation: emojiFloat 3s ease-in-out infinite;
+}
+
+@keyframes emojiFloat {
+  50% { transform: translateY(-9px) rotate(8deg) scale(1.12); }
+}
+
+/* Special love message */
+.special-box {
+  background: rgba(255,255,255,.75);
+  backdrop-filter: blur(15px);
+  border: 1px solid #f5c8da;
+  box-shadow: 0 20px 55px #d96d9c25;
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+
+.special-box:hover {
+  transform: perspective(1000px) rotateX(2deg) translateY(-6px);
+  box-shadow: 0 25px 65px #d96d9c35;
+}
+
+.special-box h2 {
+  animation: loveText 3s ease-in-out infinite;
+}
+
+@keyframes loveText {
+  50% { transform: scale(1.06); }
+}
+
+/* Reasons cards */
+.reason {
+  box-shadow: 0 5px 18px #d96d9c12;
+  transition: .35s;
+}
+
+.reason:hover {
+  transform: translateX(10px) scale(1.02);
+  background: linear-gradient(100deg, #ffe6f0, #fff8fb);
+  box-shadow: 0 10px 25px #d96d9c25;
+}
+
+/* 3D envelope */
+.envelope {
+  background: linear-gradient(145deg, #ffd5e5, #e99bbd);
+  box-shadow:
+    0 12px 0 #c46c94,
+    0 22px 40px #d96d9c40;
+  transform-style: preserve-3d;
+  animation: envelopeFloat 3s ease-in-out infinite;
+}
+
+@keyframes envelopeFloat {
+  0%,100% { transform: translateY(0) rotateX(0); }
+  50% { transform: translateY(-12px) rotateX(8deg); }
+}
+
+.envelope:hover {
+  transform: scale(1.06) rotateY(8deg);
+}
+
+/* Letter opening */
+.letter-content.show {
+  animation: letter3D .9s cubic-bezier(.2,.8,.2,1);
+  transform-origin: top center;
+}
+
+@keyframes letter3D {
+  from {
+    opacity: 0;
+    transform: perspective(900px) rotateX(-35deg) translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(900px) rotateX(0) translateY(0);
+  }
+}
+
+/* Gift animation */
+.gift-button {
+  filter: drop-shadow(0 15px 15px #d96d9c45);
+  transform-style: preserve-3d;
+  animation: gift3D 2.5s ease-in-out infinite;
+}
+
+@keyframes gift3D {
+  0%,100% { transform: translateY(0) rotateY(0) scale(1); }
+  25% { transform: translateY(-15px) rotateY(15deg) scale(1.08); }
+  50% { transform: translateY(0) rotateY(0) scale(1); }
+  75% { transform: translateY(-10px) rotateY(-15deg) scale(1.05); }
+}
+
+.gift-message.show {
+  animation: giftReveal 1s cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes giftReveal {
+  from {
+    opacity: 0;
+    transform: perspective(900px) rotateX(30deg) scale(.7);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(900px) rotateX(0) scale(1);
+  }
+}
+
+/* Floating hearts */
+.float-heart {
+  filter: drop-shadow(0 5px 10px #d96d9c50);
+  animation: float 5s infinite ease-in-out, heartGlow 3s infinite;
+}
+
+@keyframes heartGlow {
+  50% { opacity: .9; filter: drop-shadow(0 0 12px #f18db8); }
+}
+
+/* Floating particles */
+.heart-particle {
+  filter: drop-shadow(0 0 8px #e879a8);
+  animation: rise 4s linear forwards;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(55px) scale(.96);
+  transition: opacity .9s ease, transform .9s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Music button */
+.music-btn {
+  background: linear-gradient(135deg, #f7a9c7, #c94f85);
+  box-shadow: 0 8px 25px #d96d9c65;
+  animation: musicPulse 2s infinite;
+}
+
+@keyframes musicPulse {
+  50% { box-shadow: 0 8px 35px #d96d9c90; }
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #fff0f6, #ffe0ed, #fff8fb);
+}
+
+footer .script {
+  text-shadow: 0 5px 15px #d96d9c45;
+}
+
+/* Smooth appearance */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile performance */
+@media(max-width:650px) {
+  .photo-card:hover,
+  .wish-card:hover,
+  .special-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .hero-heart {
+    font-size: 52px;
+  }
+}
+
+/* Accessibility */
+@media(prefers-reduced-motion:reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -48,5 +404,76 @@ function openGift(){const g=document.getElementById("giftMessage");g.classList.t
 const music=document.getElementById("birthdayMusic"),musicButton=document.getElementById("musicButton");
 async function toggleMusic(){if(music.paused){try{await music.play();musicButton.textContent="♫ Music ON"}catch(e){musicButton.textContent="Music file missing"}}else{music.pause();musicButton.textContent="♫ Music OFF"}}
 function sendHearts(){const symbols=["💗","💕","♡","🌸","✨","💖","🦋"];for(let i=0;i<24;i++){const h=document.createElement("div");h.className="heart-particle";h.textContent=symbols[Math.floor(Math.random()*symbols.length)];h.style.left=Math.random()*100+"vw";h.style.fontSize=16+Math.random()*20+"px";h.style.animationDuration=3+Math.random()*3+"s";document.body.appendChild(h);setTimeout(()=>h.remove(),6500)}}
+
+/* PREMIUM SCROLL REVEAL */
+document.addEventListener("DOMContentLoaded", () => {
+
+  const revealElements = document.querySelectorAll(
+    "section, .photo-card, .wish-card, .reason, .special-box"
+  );
+
+  revealElements.forEach(element => {
+    element.classList.add("reveal");
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12
+  });
+
+  revealElements.forEach(element => observer.observe(element));
+
+  /* Continuous floating romantic particles */
+  const symbols = ["♡", "💗", "✨", "🌸", "💕"];
+
+  function createFloatingHeart() {
+    const heart = document.createElement("div");
+
+    heart.className = "heart-particle";
+    heart.textContent = symbols[
+      Math.floor(Math.random() * symbols.length)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.bottom = "-35px";
+    heart.style.fontSize = (14 + Math.random() * 18) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 11000);
+  }
+
+  setInterval(createFloatingHeart, 900);
+
+  /* 3D photo card tilt */
+  if (window.matchMedia("(hover: hover)").matches) {
+    document.querySelectorAll(".photo-card, .wish-card").forEach(card => {
+
+      card.addEventListener("mousemove", e => {
+        const rect = card.getBoundingClientRect();
+
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+        card.style.transform =
+          `perspective(900px) rotateY(${x * 12}deg) rotateX(${-y * 12}deg) translateY(-7px)`;
+      });
+
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "";
+      });
+
+    });
+  }
+
+});
+
 </script>
 </body></html>
